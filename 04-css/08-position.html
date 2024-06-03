@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Position</h1>
+    <h2>center</h2>
+    <div class="container2">
+        <div class="item"></div>
+    <style>
+        .item {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            /* margin: 12 3 6 9시방향-50px 0 0 50px;  */
+             transform: translate(/*x축,y축*/-50%,-50%); 
+        }
+        .container2 {
+            position: relative;
+            height: 300px;
+            background: lightyellow;
+        }
+    </style>
+    </div>
+
+    <h2>sticky</h2>
+    <div class="container">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+    <div class="box sticky">sticky</div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+</div>
+<style>
+    .sticky {
+        position: sticky;
+        top: 100px;
+        left: 0;
+        z-index: 100;
+    }
+</style>
+    <h2>fixed</h2>
+     <header>header</header>
+    <style>
+        header {
+            /* fixed의 기준은 body */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            /* bottom: 0; */
+            /* width: 100%; */
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+
+    <h2>relative</h2>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <style>
+        .box3 {
+            position: absolute;
+            bottom: 160px;
+            right: 320px;
+            width: 100px;
+            height: 100px;
+            background: olive;
+            opacity: 0.5;
+        }
+        .box2 {
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            width: 100px;
+            height: 100px;
+            background: lavender;
+        }
+        .box1 {
+            position: relative;
+            height: 500px;
+            background: lightcyan;
+        }
+    </style>
+    <div class="wrap">
+        <div class="base">
+        <div class="box relative1">relative1</div>
+    </div>
+        
+    <div class="base">
+        <div class="box relative2">relative2</div>
+    </div>
+    <div class="base">
+        <div class="box absolute">absolute</div>
+    </div>
+    <div class="base">
+        <div class="box abs1">abs</div>
+    </div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+        <style>
+            .abs1 {
+                position: absolute;
+                top: 200px;
+                left: 200px;
+            }
+            .wrap {
+                position: relative;
+            }
+            .base {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background: lightgray;
+            }
+            .absolute{
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+            .relative1 {
+                position: relative;
+                top: 50px;
+                left: 100px;
+            }
+            .relative2 {
+                position: relative;
+            }
+            .box {
+                width: 100px; 
+                height: 100px;
+                background: lightcoral;
+            }
+            .wrap {
+                height: 200vh;
+                background: lightblue;
+            }
+        </style>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Position</h1>
+    <h2>center</h2>
+    <div class="container2">
+        <div class="item"></div>
+    <style>
+        .item {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            /* margin: 12 3 6 9시방향-50px 0 0 50px;  */
+             transform: translate(/*x축,y축*/-50%,-50%); 
+        }
+        .container2 {
+            position: relative;
+            height: 300px;
+            background: lightyellow;
+        }
+    </style>
+    </div>
+
+    <h2>sticky</h2>
+    <div class="container">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+    <div class="box sticky">sticky</div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+</div>
+<style>
+    .sticky {
+        position: sticky;
+        top: 100px;
+        left: 0;
+        z-index: 100;
+    }
+</style>
+    <h2>fixed</h2>
+     <header>header</header>
+    <style>
+        header {
+            /* fixed의 기준은 body */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            /* bottom: 0; */
+            /* width: 100%; */
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+
+    <h2>relative</h2>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <style>
+        .box3 {
+            position: absolute;
+            bottom: 160px;
+            right: 320px;
+            width: 100px;
+            height: 100px;
+            background: olive;
+            opacity: 0.5;
+        }
+        .box2 {
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            width: 100px;
+            height: 100px;
+            background: lavender;
+        }
+        .box1 {
+            position: relative;
+            height: 500px;
+            background: lightcyan;
+        }
+    </style>
+    <div class="wrap">
+        <div class="base">
+        <div class="box relative1">relative1</div>
+    </div>
+        
+    <div class="base">
+        <div class="box relative2">relative2</div>
+    </div>
+    <div class="base">
+        <div class="box absolute">absolute</div>
+    </div>
+    <div class="base">
+        <div class="box abs1">abs</div>
+    </div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+        <style>
+            .abs1 {
+                position: absolute;
+                top: 200px;
+                left: 200px;
+            }
+            .wrap {
+                position: relative;
+            }
+            .base {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background: lightgray;
+            }
+            .absolute{
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }
+            .relative1 {
+                position: relative;
+                top: 50px;
+                left: 100px;
+            }
+            .relative2 {
+                position: relative;
+            }
+            .box {
+                width: 100px; 
+                height: 100px;
+                background: lightcoral;
+            }
+            .wrap {
+                height: 200vh;
+                background: lightblue;
+            }
+        </style>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* 차선책 */
+@import 'fonts.css';
+
+/* 기본 세팅 값 : reset */
+/* mobile */
+* {
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+    letter-spacing: -0.4px;
+    line-height: 1.5;
+    /* chrome browser 폰트 사이즈 기본값은 16px 이다.*/
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+/* Desktop */
+@media only screen and (min-width: 600px) {
+    * {
+      font-size: 14px;
+    }
+  }
+
+main {
+    background-color: l pink;
+}
+
+#header {
+ /* background-color: #add8e6;    */
+ background-color: rgba(173, 216, 230, 0.5);
+}
+#header #logo a {
+    /* width: 200px; */
+    color: red;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+    /* font-weight: normal; */
+    /* font-size: 1.875em; */
+    /* font-family: 'Bebas Neue' sans-serif; */
+    
+}
+#header #logo a::before {
+    content: '\f578';
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+#header #logo img {
+    margin-top: -5px;
+}
+
+/* #gnb > ul > li { 
+    border: 1px solid green;
+}*/
+    
+/* 자식만 잡고 싶은 경우 */
+.gnb .depth1 > li >a {
+    border: 1px solid blue;
+    font-size: 1.25em;
+}
+
+.gnb .depth2 li {
+    border: 1px solid green;
+    display: none;
+}
+.depth1 > li > a::before {
+    content: '\f101';
+    font-family: 'Line Awewome Free';
+    font-weight: 900;
+}
+.depth2 {
+    display: none;
+}
+/* util */
+.util .btn-menu {
+        width: 100px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        
+}
+
+.form-search .inp-search {
+    width: 200px;
+    height: 30px;
+    border: 1px solid red;
+}
+
+.form-search .inp-search:focus {
+    background-color: lightpink;
+}
+
+.main-intro{
+    border: 1px solid red;
+}
+.bg-gray {
+    background-color: #f0f0f0;
+}
+
+.corp-area .list-corp {
+    display: flex;
+}
+.corp-area .list-corp li:first-child {
+    border: 1px solid yellow;
+}
+.corp-area .list-corp li:last-child {
+    border: 1px solid yellow;
+}
+.corp-area .list-corp li:nth-child(2) {
+    border: 1px solid yellowgreen;
+}
+
+.corp-area .list-corp li:nth-last-child(2) {
+    border: 1px solid green;
+}
+
+
+.corp-area li::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    margin: 0 10px;
+    background-color: #333;
+}
+/* 첫번째 li */
+/* li 가상 before : display:none */
+
+.corp-area li:first-child::before {
+    display: none;
+}
+.corp-area li::after {
+    content: '--';
+}
+.corp-area a::before {
+    content: '==';
+}
+
+.corp-area a::after {
+    content: '>>';
+}
+

@@ -1,0 +1,350 @@
+<!-- 문서의 형식 선언 (html5) -->
+<!DOCTYPE html>
+<html lang="ko">
+  <!-- 페이지 설정 -->
+  <head>
+    <!-- 문자 인코딩 설정 -->
+    <meta charset="UTF-8" />
+    <!-- 반응형 웹 설정 -->
+    <meta name="viewport" content="width=device-width" />
+    <!--문서 제목  -->
+    <title>기본 페이지</title>
+    <!-- 오픈 그래프 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta property="og:image" content="http://www.mysite.com/myimage.jpg" />
+    <meta property="og:url" content="http://www.mysite.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    ...
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta name="twitter:domain" content="사이트 명" />
+    <!-- 파비콘 위치 -->
+    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+    <!-- 스타일 시트 -->
+    <style>
+      /* 선택자 {속성 : 값;} */
+      /* class 선택자 .(점)표기 */
+      .box1 {
+        background-color: pink;
+      }
+      /* id 선택자 #(샵) 표기 */
+      #box1{
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <!-- 페이지 본문 -->
+  <body>
+    <!-- 미디어 태그 -->
+    <!-- 비디오 태그 -->
+    <video controls autoplay muted>
+      <source src="https://www.w3schools.com/html/mov_bbb.webm"/>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4"/>
+    </video >
+
+    <iframe width="1250" height="703" src="https://www.youtube.com/embed/mOxivm3TLJA?controls=0&autoplay=1&mute=1&loop1" title="서로가 서로를 불신하는 연애❤️‍🩹일본인 남친이랑 사귀고 부작용 씨게 온 고베여행 브이로그 vlog #한일커플" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </br></br></br>
+    
+    <!-- input tag -->
+    <form action="">
+      <fieldset>
+        <legend>폼 캡션</legend>
+      <!-- text -->
+      <label for="name">이름</label>
+      <input type="text" readonly name="name" value="홍길동" autocomplete="on" required/>
+
+      <!-- password -->
+      <label for="password">비밀번호</label>
+      <input type="password" required placeholder="문자, 숫자, 특수 문자 포함 10자 이상" name="password" id="password">
+    </br></br>
+      <!-- email -->
+      <label for="eamil">이메일</label>
+      <input type="email" required  placeholder="mail@mail.com" name="email" id="email" />
+    </br></br>
+      <!-- number -->
+      <label for="number">숫자</label>
+      <input type="number" maxlength="4" name="number" id="number" />
+    </br></br>
+      <!-- search -->
+      <label for="search">검색</label>
+      <input type="search"  name="search" id="search" />
+    </br></br>
+      <!-- tel -->
+      <label for="tel">핸드폰 번호</label>
+      <input type="tel" value="010-0000-0000" readonly id="tel" name="tel" />
+    </br></br>
+      <!-- url -->
+      <label for="url">URL</label>
+      <input type="url" disabled name="url" id="url" />
+    </br></br>
+      <!-- file -->
+      <form>
+        <label for="file">파일</label>
+        <input type="file" id="file" name="file">
+      </form>
+      </br></br>
+      <!-- radio -->
+    <input type="radio" name="color" id="red">
+    <label for="red">빨강</label>
+    <input type="radio" name="color" id="blue">
+    <label for="blue">파랑</label>
+    <input type="radio" name="color" id="yellow">
+    <label for="yellow">노랑</label>
+    
+  </br></br>
+    <!-- checkbox -->
+    <input type="checkbox" name="agree" id="agree">
+    <label for="agree">동의합니다.</label>
+    
+    </br></br>
+    <!-- selectbox -->
+    <label for="fruit">선호 과일</label>
+    <select name="fruit" id="fruit">
+      <option value="apple">apple</option>
+      <option value="melon">melon</option>
+    </select>
+
+  </br>
+    <!-- textarea -->
+    <label for="message">메시지</label>
+    <textarea name="message" id="message" rows="10" cols="50"></textarea>
+  </br></br>
+    <!-- button -->
+    <!-- 동적인 액션 -->
+    <button>검색</button>
+    <!-- 단순 링크 표시 -->
+    <a href="#">링크</a>
+
+    
+    <!-- submit -->
+    <input type="reset" value="취소" />
+    <input type="submit" value="전송">
+  </fieldset>
+    </form>
+</fieldset>
+    
+
+  </br>
+  </br>
+  </br>
+  </br>
+    <!-- 이미지 분기대응 -->
+    <picture>
+      <!-- 600px 이하 -->
+      <source media="(max-width: 600px)" srcset="images/img_smallflower.jpg">
+      <!-- 1500px 이하-->
+      <source media="(min-width: 1500px)" srcset="images/img_flowers.jpg">
+      <!-- 1500px 이상 -->
+      <source srcset="images/flowers.jpg">
+      <img src="images/img_smallflower.jpg" alt="">
+    </picture>
+
+
+    <!-- layout 태그 -->
+    <!-- .wrap / #wrap -->
+    <div class="wrap">
+      <header>
+        <h1>
+          <a href="#">logo</a>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">menu1</a>
+              <ul>
+                <li><a href="#">menu1-1</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">menu1-2</a></li>
+              </ul>
+              <ul>
+                <li>
+                <a href="#">menu1-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">menu2</a>
+            </li>
+            <li>
+              <a href="#">menu3</a>
+              
+              
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- 주제별 나눔 -->
+        <section>
+          <h2>section title</h2>
+          <p>section content</p>
+        </section>
+        <section></section>
+        <!-- 독립된 기사나 글 -->
+        <article>
+          <h2>article title</h2>
+          <p>article content</p>
+        </article>
+        <!-- 사이드 컨텐츠 -->
+        <aside></aside>
+      </main>
+      <footer>footer</footer>
+    </div>
+    
+
+    <!-- div 태그 -->
+    <!-- 웹페이지의 섹션을 그룹화하는데 사용됨 -->
+    <div class="box1">
+      <h2>타이틀</h2>
+      <!-- lorem 10 -->
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, harum.</p>
+    </div>
+    <div class="box1">
+      <h2>타이틀</h2>
+      <!-- lorem 10 -->
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, harum.</p>
+    </div>
+    <!-- id값은 중복 사용 금지 -->
+    <div id="box1">
+      <h2>타이틀</h2>
+      <!-- lorem 10 -->
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, harum.</p>
+    </div>/#box1
+    <div id="box1">
+      <h2>타이틀</h2>
+      <!-- lorem 10 -->
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, harum.</p>
+    </div>/#box1
+    
+
+    <!-- 블록 & 인라인 태그 -->
+    
+    <!-- block -->
+    <!-- 기본값 : width 100% -->
+    <!-- 밑으로 쌓인다 -->
+    <div>block</div>
+    <div>block</div>
+    <div>block</div>
+
+
+    <!-- inline -->
+    <!-- width, height 적용 안됨 -->
+    <span>inline</span>
+    <span>inline</span>
+    <span>inline-추가추가</span>
+
+    <hr />
+    <!-- 제목 태그 -->
+    <h1>logo</h1>
+    <h2>섹션 타이틀</h2>
+    <h3>섹션 서브 타이틀</h3>
+    <!-- 문단 태그 -->
+    <p>문단 <br />내용</p>
+    <hr />
+    <!-- 링크 태그 -->
+    <a href="https://www.naver.com">Naver</a>
+    <!-- 이미지 태그 -->
+    <img src="images/cream.jpg" alt="이미지 설명" />
+    <!-- ./ 현재 위치 (로컬) -->
+    <!-- ,,/ 상위(로컬) -->
+    <img src="images/dentist.jpg" alt="치과" />
+
+    <!-- http://www.github.com/ (서버) -->
+    <img src="http://www.github.com/images/dentist.jpg" alt="" />
+    <p>
+      <strong>중요한 텍스트</strong>
+      <b>굵은 텍스트</b> Lorem ipsum dolor sit amet consectetur adipisicing
+      elit.<br />Officiis dolore repellat reiciendis sint? Aspernatur laudantium
+      dolorem culpa suscipit nobis non ipsum illum? Officiis itaque dolorum
+      ipsum delectus? Esse, mollitia iste?
+    </p>
+    <!-- 테이블 태그 -->
+    <table border="1">
+      <caption>
+        테이블 제목
+      </caption>
+      <!-- 열 그룹 -->
+      <colgroup>
+        <col style="width: 50%" />
+        <col span="2" />
+      </colgroup>
+      <!-- 테이블 머릿글 -->
+      <thead>
+        <tr>
+          <!-- 열 -->
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <!-- 테이블 몸체 -->
+      <tbody>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </tbody>
+      <!-- 테이블 바닥글 -->
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>100</td>
+          <td>200</td>
+        </tr>
+      </tfoot>
+
+      <br />
+    </table>
+    <!-- 목록 태그 -->
+
+    <!-- 순서가 없는 목록 -->
+    <ul>
+      <li>사과</li>
+      <li>바나나</li>
+      <li>딸기</li>
+    </ul>
+    <!-- 순서가 있는 목록 -->
+    <ol>
+      <li>딸기</li>
+      <li>바나나</li>
+      <li>사과</li>
+    </ol>
+    <!-- 정의 목록 -->
+    <dl>
+      <dt>제목</dt>
+      <dd>설명</dd>
+    </dl>
+    <dl>
+      <dt>제목</dt>
+      <dd>설명</dd>
+    </dl>
+    <br />
+    <br />
+  </body>
+</html>
