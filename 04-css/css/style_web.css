@@ -87,6 +87,13 @@ a:hover {
     margin: 0 auto;
     padding: 0;
 }
+header {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
 
 header.fixed {
     position: fixed;
