@@ -9,6 +9,18 @@
             .demo {
                 transition: all 1s;
             }
+            </style>
+        <body>
+        <div id="demo">안녕 자바스크립트???</div>
+        <button onclick="myF()">텍스트 변경</button>
+        <div class="slide">
+            <ul>
+                <li>slide1</li>
+                <li>slide2</li>
+                <li>slide3</li>
+            </ul>
+        </div>
+            <style>
             .slide {
                 position: relative;
                 width: 300px;
@@ -19,14 +31,15 @@
             .slide ul {
                 position: absolute;
                 top: 0;
-                left: -200%;
+                left: 0;
                 display: flex;
                 width: 300%;
                 margin: 0;
                 list-style: none;
-                margin-block-start: none;
-                padding-inline-start: none;
+                margin-block-start: 0;
+                padding-inline-start: 0;
                 opacity: 0.5;
+                transition: left 0.3s;
             }
             .slide li {
                 width: 100%;
@@ -37,16 +50,6 @@
             }
         </style>
     </head>
-    <body>
-        <!-- <div id="demo">안녕 자바스크립트???</div> -->
-        <div class="demo">안녕 HTML???</div>
-        <button onclick="myF()">텍스트 변경</button>
-        <div class="slide">
-            <ul>
-                <li>slide1</li>
-                <li>slide2</li>
-                <li>slide3</li>
-            </ul>
-        </div>
+
     </body>
 </html>
