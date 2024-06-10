@@ -15,10 +15,10 @@ $(function () {
         $('#layerPop').fadeOut(3000)
     })
     // 'header' 클릭시
-    $('header').click(function () {
-        // 'header 에게 fixed' 클래스 추가
-        $('this').addClass('fixed')
-    })
+    // $('header').click(function () {
+    // 'header 에게 fixed' 클래스 추가
+    // $('this').addClass('fixed')
+    // })
     // 윈도우 스크롤 이벤트
     $(window).scroll(function () {
         let scroll = $(window).scrollTop()
