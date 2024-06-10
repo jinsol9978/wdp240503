@@ -59,4 +59,46 @@ const users = [
 ];
 
 console.log(users[1]); //{name: '김철수', age: '20'}
-console.log(users[1].name); //김철수
+console.log(`${users[1].name}님 안녕하세요.`); //김철수
+
+//함수
+// 기명 함수
+function 함수이름() {}
+함수이름();
+// 익명 함수
+const fun1 = function () {
+    console.log('fun1');
+};
+const fun2 = () => {
+    console.log('fun2');
+};
+fun2();
+
+// 조건문
+const aa = 1;
+
+// if (조건) {조건이 참일 때 실행되는 코드}
+if (a === 1) {
+    console.log('aa는 1입니다');
+} else if (a === 1) {
+    ㅇㄹㅇ;
+} else {
+    // 조건이 거짓일 때 실행되는 코드
+    console.log('aa는 1이 아닙니다.');
+}
+// if else문
+
+// slide
+let current = 0;
+const lstSlide = document.querySelector('.slide ul');
+
+// console.log(lstSlide)
+// lstSlide.style.border = '1px solid purple'
+
+// 3초마다 슬라이드가 넘어가도록
+setInterval(function () {
+    slide(); //슬라이드 함수 호출
+}, 3000);
+
+// 슬라이드 함수 정의
+function slide() {}
