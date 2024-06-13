@@ -13,7 +13,7 @@ function myF() {
 
 // 변수
 // 변수란 데이터를 저장하는 공간
-// 변수 선언
+// 변수 선언 (let, const, var)
 let a = 20;
 a = 10;
 console.log(a);

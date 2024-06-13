@@ -67,19 +67,25 @@
 
             // window.addEventListener('이벤트', 함수)
             window.addEventListener('scroll', function () {
-                const item1 = document.querySelector('.item1');
-                const item2 = document.querySelector('.item2');
+                const section = document.querySelector('.container');
 
-                const scrolled = window.scrollY; //스크롤된 양
-                console.log('스크롤값', scrolled);
-                console.log(`스크롤값의 50% ${scrolled * 0.5}`);
+                section.forEach(function (section) {
+                    const item1 = section.querySelector('.item1');
+                    const item2 = section.querySelector('.item2');
 
-                item1.style.transform = `scale(${scrolled * 0.01})`;
-                item2.style.transform = `translate(${scrolled}px,${scrolled}px)`;
+                    const scrolled = window.scrollY; //스크롤된 양
+                    console.log('스크롤값', scrolled);
+                    console.log(`스크롤값의 50% ${scrolled * 0.5}`);
+
+                    item1.style.transform = `scale(${scrolled * 0.01})`;
+                    item2.style.transform = `translate(${scrolled}px,${scrolled}px)`;
+                });
             });
 
             const items = ['item1', 'item2', 'item3'];
-            items.forEach();
+            items.forEach(function (a) {
+                console.log(a);
+            });
         </script>
     </body>
 </html>
