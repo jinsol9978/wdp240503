@@ -8,12 +8,13 @@
 <body>
     <style>
         .box div {
+            transition: all 1s;
             width: 200px;
             height: 200px;
-            background-color: rgb(211, 60, 85 );
+            background-color: rgb(255, 19, 255, 0.3);
         }
         .box{
-            transition: transform 1s;
+            /* transition: transform 1s; */
             width: 200px;
             height: 200px;
             margin: 0 auto;
@@ -36,16 +37,20 @@
     </div>
     <style>
         .t4:hover {
-            transform: skew(2);
+            transform: skew(30deg);
+            background-color: lightcoral;
         }
         .t3:hover {
             transform: scale(2);
+            background-color: lightcoral;
         }
         .t2:hover {
             transform: rotate(45deg);
+            background-color: lightcoral;
         }
         .t1:hover {
             transform: translate(50px, -50px);
+            background-color: lightcoral;
         }
         
     </style>
